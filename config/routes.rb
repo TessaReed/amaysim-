@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
+
+
 # homepage/help
-  get 'pages/homepage', to: 'pages#homepage'
+  root to: 'pages#homepage'
 
   get 'help/mobile', to: 'pages#help'
 
