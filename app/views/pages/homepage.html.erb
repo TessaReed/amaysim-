@@ -1,0 +1,75 @@
+
+<body>
+<!-- white container above nav-->
+<div class="bg-white">
+</div>
+
+<!-- orange container with nav bar -->
+
+<!-- purple container with jumbotron -->
+<div class="bg-purple">
+  <div class= "container">
+    <div class="jumbotron">
+        <div class="row">
+          <div class="col-md-8">
+            <%= render 'layouts/jumbotron'%>
+          </div>
+          <div class="col-md-4">
+            <!-- image in here -->
+          </div>
+        </div>
+    </div>
+  </div>
+</div><!-- bg-purple -->
+
+<!-- div class white with list and jumbotron -->
+<div class="bg-white">
+  <div class ="container">
+    <div class="row h-25">
+      <div class="col-sm-4">
+        <%= render 'layouts/list'%>
+      </div>
+      <div class="col-sm-8">
+        <%= render 'layouts/nav_second'%>
+      </div>
+    </div>
+  </div>
+</div>
+  </body>
+
+<!-- list below of three images -->
+<div class ="image">
+  <div class="row">
+    <div class="col-4">
+    <%= image_tag("amysim.png", class: 'img-fluid')%>
+    </div>
+    <div class="col-4">
+    <%= image_tag("amysim2.png", class: 'img-fluid')%>
+    </div>
+    <div class="col-4">
+    <%= image_tag("amysim3.png", class: 'img-fluid')%>
+    </div>
+  </div>
+</div>
+
+<div class="plans">
+<div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <%= image_tag("plan1.png", class: 'resize-image center-block')%>
+          <a class="btn btn-primary btn-lg" href="#" role="button">mobile plans</a>
+          <%= link_to "mobile-plans", plans_mobile_plans_path %>
+        </div>
+         <div class="col-4">
+           <%= image_tag("plan2.png", class: 'resize-image center-block')%>
+           <%= link_to "nbn plans", plans_nbn_path %>
+         </div>
+         <div calls="col-4">
+           <%= image_tag("plan3.png", class: 'resize-image center-block')%>
+           <%= link_to "data only plans", plans_data_plans_path %>
+         </div>
+      </div>
+  </div>
+</div>
+
+</body>

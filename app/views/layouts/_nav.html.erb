@@ -1,0 +1,48 @@
+<!-- nav bar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-orange">
+  <div class ="container">
+<!-- homepage button -->
+<div class="btn btn-primary">
+  <%= link_to "Amaysim", pages_homepage_path(@product), :class => "btn" %>
+</div>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <!-- dropdown plans -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Plans
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item"</a>
+              <%= link_to "mobile-plans", plans_mobile_plans_path %>
+            <a class="dropdown-item"</a>
+              <%= link_to "nbn plans", plans_nbn_path %>
+            <a class="dropdown-item" </a>
+              <%= link_to "data only plans", plans_data_plans_path %>
+          </div>
+        </li>
+        <!-- dropdown about -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            About
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+            <a class="dropdown-item"</a>
+            <%= link_to "Who", about_who_we_are_path %>
+            <a class="dropdown-item"</a>
+            <%= link_to "Why", about_why_amysim_path %>
+          </div>
+        </li>
+        <!-- end -->
+        <!-- help -->
+        <li class="nav-item">
+          <a class="nav-link" </a>
+            <%= link_to "help", help_mobile_path %>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
