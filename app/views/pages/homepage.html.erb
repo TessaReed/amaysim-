@@ -52,24 +52,14 @@
   </div>
 </div>
 
-<div class="plans">
-<div class="container">
-      <div class="row">
-        <div class="col-md-4">
-          <%= image_tag("plan1.png", class: 'resize-image center-block')%>
-          <a class="btn btn-primary btn-lg" href="#" role="button">mobile plans</a>
-          <%= link_to "mobile-plans", plans_mobile_plans_path %>
-        </div>
-         <div class="col-4">
-           <%= image_tag("plan2.png", class: 'resize-image center-block')%>
-           <%= link_to "nbn plans", plans_nbn_path %>
-         </div>
-         <div calls="col-4">
-           <%= image_tag("plan3.png", class: 'resize-image center-block')%>
-           <%= link_to "data only plans", plans_data_plans_path %>
-         </div>
-      </div>
-  </div>
+<!-- list of plans in flex container -->
+<div class="flex-container">
+  <class="flex-item">1>
+  <%= image_tag("plan1.png", class: 'img-fluid')%>
+  <li class="flex-item">2</li>
+  <%= image_tag("plan2.png", class: 'img-fluid')%>
+  <li class="felx-tem">3</li>
+   <%= image_tag("plan3.png", class: 'img-fluid')%>
 </div>
 
 </body>

@@ -16,6 +16,17 @@
 
 @import "bootstrap";
 
+.flex-container {
+
+}
+
+.flex-item {
+flex-shrink: 1;
+flex-shrink: 2;
+flex-shrink: 3;
+flex-direction: row;
+}
+
 .bg-white {background-color: white;}
 
 .bg-orange {background-color: #FF5500;}
